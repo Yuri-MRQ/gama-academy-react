@@ -16,17 +16,17 @@ function Home(props) {
     axios.get(`https://api.github.com/users/${usuario}/repos`).then(response => {
       const repositories = response.data;
       const repositorieName = [];
-      repositories.map((repository => {
+      repositories.map((repository) => {
         repositorieName.push(repository.name);
-      }))
+      });
       localStorage.setItem('repositoriesName', JSON.stringify(repositorieName));
       setError(false);
       history.push('/repositorios');
       // 
     })
     .catch(err => {
-      setError(true)
-    })
+      setError(true);
+    });
   }
   return (
     <S.HomeContainer>
@@ -40,7 +40,7 @@ function Home(props) {
      
     </S.HomeContainer>
   );
-}
+};
 
 export default Home;
 
