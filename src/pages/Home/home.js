@@ -17,7 +17,7 @@ function Home(props) {
       const repositories = response.data;
       const repositorieName = [];
       repositories.map((repository) => {
-        repositorieName.push(repository.name);
+        return repositorieName.push(repository.name);
       });
       localStorage.setItem('repositoriesName', JSON.stringify(repositorieName));
       setError(false);
