@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-This API serach a Github username and return all his repositories.
+This API search a Github username and return all his repositories.
